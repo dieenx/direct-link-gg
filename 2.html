@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<title>direct link google drive</title>
+</head>
+<body>
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <!--<base target="_blank">-->
+  <base href="." target="_blank">
+  <script language="javascript">
+    window.onload = setup;
+
+    function setup() {
+      document.getElementById(
+        'button').addEventListener(
+        'click', go, false);
+    }
+
+    function go() {
+      var DocIDfull = document.getElementById(
+        'DocID').value;
+      var DocIDstart = DocIDfull.indexOf(
+        '/d/');
+      var DocIDend = DocIDfull.indexOf(
+        '/', DocIDstart + 3);
+      if (DocIDstart == -1) {
+        document.getElementById(
+            'Input_span').innerHTML =
+          '<input type="text" id="output" style="background-color:darkred;color:white;width:300px;" value="Lỗi: URL không hợp lệ" readonly>';
+        return
+      }
+      if (DocIDend == -1) {
+        var DocID = DocIDfull.slice(
+          DocIDstart + 3)
+      } else {
+        var DocID = DocIDfull.slice(
+          DocIDstart + 3, DocIDend)
+      }
+      var ID =
+        'https://drive.google.com/uc?export=download&id=' +
+        DocID;
+      document.getElementById(
+          'Input_span').innerHTML =
+        '<input type="text" onclick="this.select();" id="output" style="width:300px;" value="' +
+        ID +
+        '" readonly>' +
+        '<hr style="visibility:hidden;height:0">' +
+        '<font style="font-size: 12px;font-weight: bold;color: #086900;">Mẹo: Nhấp vào văn bản đầu ra, sau đó nhấn Ctrl + A,' +
+        '<br>sau đó nhấn Ctrl + C để sao chép nó vào khay nhớ tạm của bạn' +
+        '<br>(Cmd + A và Cmd + C trên máy mac)</font>';
+      document.getElementByID(
+        'output').select();
+    }
+  </script>
+  <font face="Century Gothic, Calibri" size="5">Nhập URL chia sẻ của bạn:</font><br>
+  <input id="DocID" style="width:300px;" type="text"><br>
+  <button id="button">Tạo liên kết trực tiếp</button><br><br>
+  <font face="Century Gothic, Calibri" size="5">Liên kết đầu ra:</font><br>
+  <span id="Input_span">
+<input id="output" style="width:300px;" type="text" readonly="">
+</span>
+<br>
+<br>
+<!-- Thả Tim -->
+<script type='text/javascript'>
+!function(e,t,a){function n(){c(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"),o(),r()}function r(){for(var e=0;e<d.length;e++)d[e].alpha<=0?(t.body.removeChild(d[e].el),d.splice(e,1)):(d[e].y--,d[e].scale+=.004,d[e].alpha-=.013,d[e].el.style.cssText="left:"+d[e].x+"px;top:"+d[e].y+"px;opacity:"+d[e].alpha+";transform:scale("+d[e].scale+","+d[e].scale+") rotate(45deg);background:"+d[e].color+";z-index:99999");requestAnimationFrame(r)}function o(){var t="function"==typeof e.onclick&&e.onclick;e.onclick=function(e){t&&t(),i(e)}}function i(e){var a=t.createElement("div");a.className="heart",d.push({el:a,x:e.clientX-5,y:e.clientY-5,scale:1,alpha:1,color:s()}),t.body.appendChild(a)}function c(e){var a=t.createElement("style");a.type="text/css";try{a.appendChild(t.createTextNode(e))}catch(t){a.styleSheet.cssText=e}t.getElementsByTagName("head")[0].appendChild(a)}function s(){return"rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"}var d=[];e.requestAnimationFrame=function(){return e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||function(e){setTimeout(e,1e3/60)}}(),n()}(window,document);
+</script>
+<!-- Thả Tim -->
+</body>
+</html>
