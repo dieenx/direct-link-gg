@@ -1,4 +1,5 @@
-<html><head><base target="_blank"></head><body><div class="link-generate">
+<html>
+<head>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;display=swap" rel="stylesheet">
     <script language="javascript">
         window.onload = setup;
@@ -56,66 +57,22 @@
             }
         }
     </script>
-    <style>
-        .link-generate {
-            font-family: 'Roboto Condensed', sans-serif;
-        }
-    
-        .title {
-            font-size: 1.6em;
-            margin: 15px 0 10px;
-        }
-        
-        .sub {
-            font-size: 0.5em;
-            color: #444;
-            vertical-align: middle;
-        }
-        
-        #button {
-            display: block;
-            font-family: 'Roboto Condensed', sans-serif;
-            font-size: 1.2em;
-            padding: 10px 18px;
-            margin: 15px auto;
-            border: none;
-            border-radius: 3px;
-            background: #ffd54f;
-            color: #111;
-            cursor: pointer;
-            box-shadow: 0 2px 3px 0px #b5b5b5;
-            transition: background 200ms;
-        }
-        
-        #button:hover {
-            background: #ffe48e;
-        }
-        
-        #button:active {
-            background: #ffd54f;
-            box-shadow: 0 2px 3px -1px #b5b5b5;
-        }
-        
-        #input, #output {
-            font-size: 1.1em;
-            display:block;
-            width:100%;
-            padding: 10px;
-            border: 1px solid #b5b5b5;
-            border-radius: 3px;
-        }
-        
-        #help-text {
-            font-weight: 600;
-            margin: 10px;
-        }
-    </style>
-    <div class="title">Nhập URL chia sẻ của bạn:</div>
-    <input id="input" type="text">
-    <button id="button">Tạo liên kết trực tiếp</button>
-    <div class="title">Liên kết đầu ra:</div>
-    <input id="output" type="text" readonly="" disabled="">
-    <div id="help-text"></div>
+
+<style>
+  input[type=url]{position:relative;width:90%;line-height:1em;font-size:14px;color:#455065;background:#ebeff3;margin-top:10px;padding:15px;border-radius:40px;border:none;outline:0}.PixabingoogleGen{display:flex;justify-content:center;color:#000;flex-wrap:wrap;font-family:var(--fontBa);font-size:14px}.gdCont{width:100%;display:block;position:relative;background:#fff;border-radius:20px;box-shadow:0 10px 40px rgba(149,157,165,.2);padding:0 0 74px;text-align:center;margin:30px 10px 20px}.gdCont p{display:inline-flex;align-items:center;font-size:18px;font-weight:700;font-family:var(--fontBa)}.gdCont p svg{margin-right:5px;fill:#0033ff;height:30px;width:30px}.g-button{display:inline-flex;align-items:center;margin:12px 0;padding:10px 15px;border:0;border-radius:8px;line-height:20px;color:#fffdfc;background:#0033ff;font-size:14px}#help-text{font-size:.8rem;margin:10px}
+</style>
+<div class="PixabingoogleGen">
+<div class="gdCont"> <p>
+<svg viewBox="0 0 32 32"><path d="M29,19.26a1,1,0,0,0,0-.34s0-.05,0-.08a.94.94,0,0,0-.11-.32v0l-8-14A1,1,0,0,0,20,4H12a1,1,0,0,0-.86.5,1,1,0,0,0,0,1L14.85,12,8,24,5.15,19l5.38-9.41a1,1,0,0,0-1.74-1L3.13,18.5a1,1,0,0,0,0,1l4,7,.16.21h0a1,1,0,0,0,.27.19l.08,0A1,1,0,0,0,8,27H24a1,1,0,0,0,.87-.5l4-7a1,1,0,0,0,.09-.22ZM19.42,6l6.86,12h-5.7L13.72,6ZM18.28,18H13.72L16,14Zm5.14,7H9.72l2.86-5h13.7Z"></path>
+
+</svg>Generate Link</p>
+<div class="title">Nhập URL chia sẻ của bạn:</div>
+<input id="input" placeholder="Nhập Liên kết G-drive có thể chia sẻ của bạn" type="url">
+<button class="g-button" id="button">Tạo liên kết trực tiếp</button>
+<button class="g-button" onclick="window.location.reload();" type="button">Tải lại trang</button>
+<div class="title">Liên kết đầu ra:</div>
+<input disabled="" id="output" readonly="" type="url">
+<div id="help-text"></div>
 
     <!-- Thả Tim -->
 <script type='text/javascript'>
@@ -132,8 +89,5 @@
     -o-user-select: none;
     user-select: none;
     }
-    /* mouse default */
-    html,body{cursor:url("https://lh3.googleusercontent.com/L0s3XCs_J8etSWVaYZqcXWJuj9csnwPSNzvMPOfjT2Ic9S-qZUXqCtphpFWUGs5PhC-nJHlo5fhI4pPq4LBt5xeIodQOFh1dWnH5kSDQNA=w28-h32-rw-no"), auto;}
-    a:hover{cursor:url("https://lh3.googleusercontent.com/9MgrPe_sFFhVkFP39_BmML60dWoMk8QW_6SBh88HCXEB3LtV9Ev5OThaWciN319C8jr_U03wV1w3JYxOrcmaXYXmTIdw5yb_C0b4RUfOHA=w22-h24-rw-no"), auto;}
     </style>
 </div></body></html>
