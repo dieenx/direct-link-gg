@@ -7,9 +7,10 @@ https://docs.google.com/uc?export=view&id=
 ```
 https://docs.google.com/uc?export=download&id=
 ```
-
-> view-source:
-```
+<details>
+  <summary>Click to Source Code</summary>
+  
+```html
 <html><head><base target="_blank"></head><body><div class="link-generate">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&amp;display=swap" rel="stylesheet">
     <script language="javascript">
@@ -130,3 +131,4 @@ https://docs.google.com/uc?export=download&id=
     <div id="help-text"></div>
 </div></body></html>
 ```
+</details>
