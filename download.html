@@ -21,9 +21,9 @@
                 <div class="site-header-inner">
                     <div class="brand header-brand">
                         <h1 class="m-0">
-                            <a href="download.html">
+                            <a href="index.html">
                                 <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                                    <title>Get link download</title>
+                                    <title>Get link View</title>
                                     <defs>
                                         <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="logo-gradient-b">
                                             <stop stop-color="#39D8C8" offset="0%"></stop>
@@ -56,7 +56,7 @@
                 <div class="container-sm">
                     <div class="hero-inner">
                         <h1 class="hero-title h2-mobile mt-0 is-revealing" style="visibility: visible;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Direct Link Google Drive</font></font></h1>
-                        <p class="hero-paragraph is-revealing" style="visibility: visible;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">link view,docs file mp3, mp4 với được độ load nhanh (giới hạn <100MB)</font></font></p>
+                        <p class="hero-paragraph is-revealing" style="visibility: visible;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">giúp bạn có link file trực tiếp, bấm cái là download ngay và luôn, không cần view file như link dạng chia sẻ</font></font></p>
                         
                         <div class="hero-browser">
                             <div class="bubble-3 is-revealing" style="visibility: visible;">
@@ -128,7 +128,7 @@
                 return;
             }
             
-            var finalLink = "https://docs.google.com/uc?export=view&id=" + result[1];
+            var finalLink = "https://docs.google.com/uc?export=download&id=" + result[1];
             outputBox.disabled = false;
             outputBox.value = finalLink;
             setStatus("Thành công! Nhấp vào liên kết đầu ra để sao chép nó vào khay nhớ tạm của bạn");
