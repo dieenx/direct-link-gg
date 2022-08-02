@@ -1,9 +1,8 @@
-**[Preview:](https://dieenx.github.io/direct-link-gg/)**
-- id view
+- **[id view](https://dieenx.github.io/direct-link-gg/)**
 ```
 https://docs.google.com/uc?export=view&id=
 ```
-- id download
+- **[id download](https://dieenx.github.io/direct-link-gg/download.html)**
 ```
 https://docs.google.com/uc?export=download&id=
 ```
